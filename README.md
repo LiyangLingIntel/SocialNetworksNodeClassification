@@ -16,6 +16,16 @@ In the last, the multiple models in part two will be tested and evaluated on sev
 
 * [**Stanford Large Network Dataset Collection**](https://snap.stanford.edu/data/)
 
+### 2.2 Output
+
+Expected output format should be
+
+| Experiments Batch | Model | Params  | feature53 | feature54 | feature55 | accuracy |        Notes        |
+| :---------------: | :---: | :-----: | :-------: | :-------: | :-------: | :------: | :-----------------: |
+|     example 1     |  GCN  | lr=0.01 |    0.3    |    0.3    |    0.3    |   0.67   | use adjacent matrix |
+
+
+
 ## 3. Submission
 
 * **Report LaTeX Template**: https://neurips.cc/Conferences/2019/PaperInformation/StyleFiles
