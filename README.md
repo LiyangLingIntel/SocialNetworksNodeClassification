@@ -20,9 +20,18 @@ In the last, the multiple models in part two will be tested and evaluated on sev
 
 Expected output format should be
 
-| Experiments Batch | Model | Params  | feature53 | feature54 | feature55 | accuracy |        Notes        |
-| :---------------: | :---: | :-----: | :-------: | :-------: | :-------: | :------: | :-----------------: |
-|     example 1     |  GCN  | lr=0.01 |    0.3    |    0.3    |    0.3    |   0.67   | use adjacent matrix |
+| Experiments Batch |  Model  |   Params   | train_test | 5f-Cv | Feature53 | Feature54 | Feature55 |      |
+| :---------------: | :-----: | :--------: | :--------: | :---: | :-------: | :-------: | :-------: | ---- |
+|      Adj_mat      | Softmax | L2 penalty |    0.57    | 0.37  |           |           |           |      |
+|                   | Xgboost |            |    0.63    | 0.50  |           |           |           |      |
+|    Short_path     | Softmax |            |    0.65    | 0.41  |           |           |           |      |
+|                   | Xgboost |            |    0.66    | 0.52  |           |           |           |      |
+|      Global       | Softmax |            |   0.876    | 0.857 |           |           |           |      |
+|                   | Xgboost |            |   0.883    | 0.850 |           |           |           |      |
+|   global+local    | Softmax |            |   0.876    | 0.856 |           |           |           |      |
+|                   | Xgboost |            |   0.883    | 0.850 |           |           |           |      |
+| global+short path | Softmax |            |   0.879    | 0.691 |           |           |           |      |
+|                   | Xgboost |            |   0.883    | 0.799 |           |           |           |      |
 
 
 
